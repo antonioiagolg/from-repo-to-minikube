@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hello-infra
+  labels:
+    name: hello-infra
+    type: infra

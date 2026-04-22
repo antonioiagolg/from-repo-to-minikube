@@ -19,8 +19,14 @@ poetry export -f requirements.txt --output requirements.txt --without-hashes
 
 ## TODO
 
-- Configure Containerfile to build image with app- Configure Jenkins
-- Build Containerfile and push to registry
+- Create a namespace for the infra setup on kubernetes
+- Create a deployment for Jenkins
+- Allow Jenkins to be acessible through internet
+- Install Jenkins
+- Install Artifactory
+- Configure pipeline for hello-app
+- Setup build process to build podman image
+- Setup process to push image to Artifactory
 
 ## Journal
 - The gunicorn by default loads wsgi apps. To make it run my asgi app, need to run like
