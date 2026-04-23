@@ -19,7 +19,7 @@ poetry export -f requirements.txt --output requirements.txt --without-hashes
 
 ## TODO
 
-- Create a namespace for the infra setup on kubernetes
+- Create a namespace for the infra setup on kubernetes(ok)
 - Create a deployment for Jenkins
 - Allow Jenkins to be acessible through internet
 - Install Jenkins
@@ -33,3 +33,6 @@ poetry export -f requirements.txt --output requirements.txt --without-hashes
 this: `gunicorn src.main:app --worker-class asgi`
 - Later I removed the param from the command and added the config in the `gunicorn.conf.py`
 - The bind param in the CMD command is important to tell gunicorn to listen for requests on all container network interfaces, on the specified port.
+
+## References
+- https://www.jenkins.io/doc/book/installing/kubernetes/
